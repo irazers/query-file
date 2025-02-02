@@ -20,7 +20,7 @@ $ npm install -g query-file
 $ qf COMMAND
 running command...
 $ qf (--version)
-query-file/0.0.0 darwin-arm64 node-v22.13.1
+query-file/0.0.1 linux-x64 node-v20.18.2
 $ qf --help [COMMAND]
 USAGE
   $ qf COMMAND
@@ -29,8 +29,6 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`qf hello PERSON`](#qf-hello-person)
-* [`qf hello world`](#qf-hello-world)
 * [`qf help [COMMAND]`](#qf-help-command)
 * [`qf plugins`](#qf-plugins)
 * [`qf plugins add PLUGIN`](#qf-plugins-add-plugin)
@@ -42,48 +40,6 @@ USAGE
 * [`qf plugins uninstall [PLUGIN]`](#qf-plugins-uninstall-plugin)
 * [`qf plugins unlink [PLUGIN]`](#qf-plugins-unlink-plugin)
 * [`qf plugins update`](#qf-plugins-update)
-
-## `qf hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ qf hello PERSON -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Who is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ qf hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [src/commands/hello/index.ts](https://github.com/irazers/query-file/query-file/blob/v0.0.0/src/commands/hello/index.ts)_
-
-## `qf hello world`
-
-Say hello world
-
-```
-USAGE
-  $ qf hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ qf hello world
-  hello world! (./src/commands/hello/world.ts)
-```
-
-_See code: [src/commands/hello/world.ts](https://github.com/irazers/query-file/query-file/blob/v0.0.0/src/commands/hello/world.ts)_
 
 ## `qf help [COMMAND]`
 
