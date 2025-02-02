@@ -64,7 +64,10 @@
     ],
     "topicSeparator": " "
   },
-  "repository": "https://github.com/irazers/query-file",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/irazers/query-file.git"
+  },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint",
