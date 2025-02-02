@@ -5,8 +5,6 @@ on:
   push:
     branches: [main]
 
-permissions: write-all
-
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -37,6 +35,8 @@ jobs:
           git config --global user.email ${{ secrets.GH_EMAIL }}
           git config --global user.name ${{ secrets.GH_USERNAME }}
       - name: Generate oclif README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         if: ${{ steps.version-check.outputs.skipped == 'false' }}
         id: oclif-readme
         run: |
