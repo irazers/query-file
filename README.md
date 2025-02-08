@@ -20,7 +20,7 @@ $ npm install -g query-file
 $ qf COMMAND
 running command...
 $ qf (--version)
-query-file/0.0.1 linux-x64 node-v20.18.2
+query-file/0.0.1-alpha.0 linux-x64 node-v20.18.2
 $ qf --help [COMMAND]
 USAGE
   $ qf COMMAND
