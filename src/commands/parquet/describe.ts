@@ -30,7 +30,7 @@ export default class Describe extends Command {
     this.log(`Describing ${args.file}`);
 
     const metadata = await connection.run(
-      `SELECT * FROM parquet_metadata(${args.file})`,
+      `SELECT * FROM parquet_metadata("${args.file}")`,
     );
 
     let chunk = await metadata.fetchChunk();
@@ -43,7 +43,7 @@ export default class Describe extends Command {
 
     while (chunk?.rowCount) {
       if (flags.verbose) {
-        this.log(chalk.green('Processing chunk with %d rows', chunk.rowCount));
+        this.log(chalk.green(`Processing chunk with ${chunk.rowCount} rows`));
       }
 
       chunk.getRows().forEach((row) => {
