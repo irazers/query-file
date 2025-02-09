@@ -1,7 +1,7 @@
 {
   "name": "query-file",
   "description": "A CLI to query file formats like parquet, json or CSV",
-  "version": "0.0.1-alpha.0",
+  "version": "0.1.0",
   "author": "Cedric Peruzzi",
   "bin": {
     "qf": "bin/run.js"
@@ -10,28 +10,28 @@
   "dependencies": {
     "@duckdb/node-api": "1.2.0-alpha.13",
     "@oclif/core": "^4.2.6",
-    "@oclif/plugin-help": "^6.2.24",
-    "@oclif/plugin-plugins": "^5.4.30",
+    "@oclif/plugin-help": "^6.2.25",
+    "@oclif/plugin-plugins": "^5.4.31",
     "chalk": "^5.4.1",
     "cli-table3": "^0.6.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
-    "@eslint/js": "^9.19.0",
+    "@eslint/js": "^9.20.0",
     "@oclif/test": "^4.1.9",
     "@types/chai": "^4.3.20",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.10.10",
-    "@typescript-eslint/eslint-plugin": "^8.22.0",
-    "@typescript-eslint/parser": "^8.22.0",
+    "@types/node": "^22.13.1",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
     "chai": "^4.5.0",
-    "eslint": "^9.19.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint": "^9.20.0",
+    "eslint-config-prettier": "^10.0.1",
     "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.3",
     "mocha": "^10.8.2",
-    "oclif": "^4.17.23",
+    "oclif": "^4.17.26",
     "shx": "^0.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
