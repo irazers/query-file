@@ -20,7 +20,7 @@ $ npm install -g query-file
 $ qf COMMAND
 running command...
 $ qf (--version)
-query-file/0.1.0 linux-x64 node-v20.18.2
+query-file/0.1.0 darwin-arm64 node-v22.13.1
 $ qf --help [COMMAND]
 USAGE
   $ qf COMMAND
@@ -30,6 +30,9 @@ USAGE
 # Commands
 <!-- commands -->
 * [`qf help [COMMAND]`](#qf-help-command)
+* [`qf parquet`](#qf-parquet)
+* [`qf parquet describe [FILE]`](#qf-parquet-describe-file)
+* [`qf parquet read [FILE]`](#qf-parquet-read-file)
 * [`qf plugins`](#qf-plugins)
 * [`qf plugins add PLUGIN`](#qf-plugins-add-plugin)
 * [`qf plugins:inspect PLUGIN...`](#qf-pluginsinspect-plugin)
@@ -60,6 +63,72 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.2.25/src/commands/help.ts)_
+
+## `qf parquet`
+
+describe a parquet file
+
+```
+USAGE
+  $ qf parquet
+
+DESCRIPTION
+  describe a parquet file
+
+EXAMPLES
+  $ qf parquet
+```
+
+_See code: [src/commands/parquet/index.ts](https://github.com/irazers/query-file/blob/v0.1.0/src/commands/parquet/index.ts)_
+
+## `qf parquet describe [FILE]`
+
+describe a parquet file
+
+```
+USAGE
+  $ qf parquet describe [FILE] [-v]
+
+ARGUMENTS
+  FILE  file to read
+
+FLAGS
+  -v, --verbose  print debug information
+
+DESCRIPTION
+  describe a parquet file
+
+EXAMPLES
+  $ qf parquet describe
+```
+
+_See code: [src/commands/parquet/describe.ts](https://github.com/irazers/query-file/blob/v0.1.0/src/commands/parquet/describe.ts)_
+
+## `qf parquet read [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ qf parquet read [FILE] [-c <value>] [-l <value>] [-w <value>] [-v]
+
+ARGUMENTS
+  FILE  file to read
+
+FLAGS
+  -c, --columns=<value>  comma separated columns to read
+  -l, --limit=<value>    [default: 20] limit the number of rows to read (default 20)
+  -v, --verbose          print debug information
+  -w, --where=<value>    where clause to filter rows
+
+DESCRIPTION
+  describe the command here
+
+EXAMPLES
+  $ qf parquet read
+```
+
+_See code: [src/commands/parquet/read.ts](https://github.com/irazers/query-file/blob/v0.1.0/src/commands/parquet/read.ts)_
 
 ## `qf plugins`
 
