@@ -1,7 +1,7 @@
 {
   "name": "query-file",
   "description": "A CLI to query file formats like parquet, json or CSV",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Cedric Peruzzi",
   "bin": {
     "qf": "bin/run.js"
