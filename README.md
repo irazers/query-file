@@ -20,7 +20,7 @@ $ npm install -g query-file
 $ qf COMMAND
 running command...
 $ qf (--version)
-query-file/0.1.1 linux-x64 node-v20.18.3
+query-file/0.1.2 linux-x64 node-v20.19.0
 $ qf --help [COMMAND]
 USAGE
   $ qf COMMAND
@@ -59,7 +59,7 @@ DESCRIPTION
   Display help for qf.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.2.26/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.2.27/src/commands/help.ts)_
 
 ## `qf plugins`
 
@@ -82,7 +82,7 @@ EXAMPLES
   $ qf plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.34/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.36/src/commands/plugins/index.ts)_
 
 ## `qf plugins add PLUGIN`
 
@@ -156,7 +156,7 @@ EXAMPLES
   $ qf plugins inspect myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.34/src/commands/plugins/inspect.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.36/src/commands/plugins/inspect.ts)_
 
 ## `qf plugins install PLUGIN`
 
@@ -205,7 +205,7 @@ EXAMPLES
     $ qf plugins install someuser/someplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.34/src/commands/plugins/install.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.36/src/commands/plugins/install.ts)_
 
 ## `qf plugins link PATH`
 
@@ -236,7 +236,7 @@ EXAMPLES
   $ qf plugins link myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.34/src/commands/plugins/link.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.36/src/commands/plugins/link.ts)_
 
 ## `qf plugins remove [PLUGIN]`
 
@@ -277,7 +277,7 @@ FLAGS
   --reinstall  Reinstall all plugins after uninstalling.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.34/src/commands/plugins/reset.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.36/src/commands/plugins/reset.ts)_
 
 ## `qf plugins uninstall [PLUGIN]`
 
@@ -305,7 +305,7 @@ EXAMPLES
   $ qf plugins uninstall myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.34/src/commands/plugins/uninstall.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.36/src/commands/plugins/uninstall.ts)_
 
 ## `qf plugins unlink [PLUGIN]`
 
@@ -349,5 +349,5 @@ DESCRIPTION
   Update installed plugins.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.34/src/commands/plugins/update.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.36/src/commands/plugins/update.ts)_
 <!-- commandsstop -->
